@@ -18,21 +18,3 @@ EXPOSE 5000
 
 # Run app
 CMD ["python", "./server.py"]
-
-## Docker Image Build
-
-Build Image 
-```bash
-docker image build -t <your-tag> .
-```
-
-Push Image
-```bash
-docker image push <your-image>
-```
-
-## Run Docker Container 
-
-RUN Container 
-```bash
-docker container run -d --name sampleapp -p <hostport>:5000 <your-image-tag>
