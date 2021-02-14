@@ -4,21 +4,13 @@ Simple app built on Python Flask.
 
 ## Repository Structure 
 .
-
 ├── app
-
 │   ├── requirements.txt
-
 │   └── src
-
 │       ├── server.py
-
 │       └── templates
-
 │           └── index.html
-
 ├── Dockerfile
-
 └── README.md
 ```
 
