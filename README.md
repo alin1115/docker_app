@@ -3,6 +3,7 @@
 Simple app built on Python Flask. 
 
 ## Repository Structure 
+```
 .
 ├── app
 │   ├── requirements.txt
@@ -13,9 +14,6 @@ Simple app built on Python Flask.
 ├── Dockerfile
 └── README.md
 ```
-
-```
-
 
 ## Prerequisites
 
