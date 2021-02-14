@@ -48,3 +48,23 @@ docker image push <your-image>
 RUN Container 
 ```bash
 docker container run -d --name sampleapp -p <hostport>:5000 <your-image-tag>
+
+## Tree Structure 
+.
+
+├── app
+
+│   ├── requirements.txt
+
+│   └── src
+
+│       ├── server.py
+
+│       └── templates
+
+│           └── index.html
+
+├── Dockerfile
+
+└── README.md
+
