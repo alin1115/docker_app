@@ -10,7 +10,10 @@ Simple app built on Python Flask.
 │   └── src
 │       ├── server.py
 │       └── templates
+│           ├── about.html
 │           └── index.html
+├── docker-compose
+│   └── docker-compose.yaml
 ├── Dockerfile
 └── README.md
 ```
@@ -61,3 +64,17 @@ docker image push <your-image>
 RUN Container 
 ```bash
 docker container run -d --name sampleapp -p <hostport>:5000 <your-image-tag>
+```
+
+## Docker-Compose
+
+Change Directory
+```
+cd docker-compose
+```
+* NOTE : Modify docker-compose.yaml file (optional)
+Build Image and Run Container
+
+```
+docker-compose up -d --build
+```
