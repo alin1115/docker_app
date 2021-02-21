@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  myapp:
+    image: devapp:v1 # how do you wanna build
+    build: 
+      context: ../
+      dockerfile: dockerfile-dev
+    container_name: myapp
+    ports: 
+      - "8085:5000"
+  
+  apache:
+    image: httpd:latest
+    container_name: apache
+    ports: 
+      - "8086:80"
+    depends_on:
+      - "myapp" 
+    volumes:  
+     - ../files/:/usr/local/apache2/htdocs/
